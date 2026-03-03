@@ -13,12 +13,13 @@ git stash push -m "descriptive name for your work"
 - `git stash pop` # restore latest stash (and drop it)
 - `git stash apply stash@{0}` # restore without dropping
 - `git stash push -u` # stash **untracked** files as well
+- `git stash push --staged` # stash staged files only
 
 ## Commit a WIP (Work In Progress)
 
 Commit your changes even if incomplete, then amend later:
 
-```bash
+
 git add -A
 git commit -m "WIP: implementing X feature"
 # switch branches, do work, come back
